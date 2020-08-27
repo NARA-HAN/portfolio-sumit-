@@ -1,0 +1,10 @@
+@font-face {
+	font-family: 'BC steiner';
+	font-weight: 400;
+	src: url('../fonts/BC Steiner RB Regular.otf');
+}
+@font-face {
+	font-family: 'BC steiner';
+	font-weight: 500;
+	src: url('../fonts/BC Steiner MBL Regular.otf');
+}

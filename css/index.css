@@ -1,0 +1,449 @@
+* {
+	padding: 0;
+	margin: 0;	
+}
+
+body {
+	max-width: 1920px;
+	font-family: 'helvetica neue', sans-serif;
+	color: #333;
+	font-size: 0;
+	background: center/cover no-repeat;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul, ol, li {
+	list-style: none;
+}
+
+.alttxt {
+	position: absolute;
+	left: -9999px;
+}
+
+.wrapper {
+	min-width: 1420px;
+/* 	width: auto; */
+	padding: 0 10px;
+	box-sizing: border-box;
+	margin: 0 auto;	 
+}
+
+.promotion {
+	height: 45px;
+	background: #111;
+	color: #fff;
+}
+
+.promotion p {
+	line-height: 45px;
+	text-align: center;
+	font-size: 14px;
+	font-weight: 300;
+	letter-spacing: 0.05em;
+}
+
+header {
+	background: transparent;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	height: 100px;
+	z-index: 999;
+}
+
+header a {
+	color: #111;
+}
+
+header .logo {
+	text-align: center;
+}
+
+header .logo h1 {
+	font-size: 50px;
+	line-height: 100px;
+	font-family: serif;
+}
+
+header .logo a {
+	display: inline-block;
+}
+
+header .main-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: absolute;
+	left: 100px; top: 0;
+}
+
+header .main-nav li {
+	display: inline-block;
+	font-size: 14px;
+}
+
+header .main-nav li a {
+	margin-right: 20px;
+	padding: 5px 0;
+	line-height: 100px;
+	letter-spacing: 0.05em;
+}
+
+header .main-nav li a:hover {
+	border-bottom: 1px solid #24282A;
+}
+
+header .user-nav {
+	position: absolute;
+	right: 50px; top: 0;
+}
+
+header .user-nav li {
+	display: inline-block;
+	font-size: 14px;
+	margin-left: 20px;
+}
+
+header .user-nav li a {
+	line-height: 100px;
+	opacity: 1;
+	transition: opacity .3s;
+}
+
+header .user-nav li a:hover {
+	opacity: .2;
+}
+
+header .user-nav li a.country::before {
+	content: 'USA';
+	font-size: 8px;
+	text-align: center;
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+	border-radius: 50%;
+	border: 1px solid #333;
+}
+
+header .user-nav li a.reorder::before {
+	content: 'REORDER';
+	font-size: 8px;
+	text-align: center;
+	display: inline-block;
+	padding: 0 10px;
+	line-height: 25px;
+	border: 1px solid #333;
+}
+
+main .home-banner img {
+	width: 100%;
+	background: url('/leesul.com/work/necessaire/images/main1.jpg') center/cover no-repeat; 
+}
+
+main .company-info {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 50px;
+}
+
+main .company-info article {
+	flex: 1;
+	padding: 40px;
+}
+
+main .company-info .whatWeMake {
+	background: #333;
+	color: #EAE9E7;
+}
+
+main .company-info .whatWeMake a {
+	background: #EAE9E7;
+	color: #333;
+}
+
+main .company-info .whatWeBelieve {
+	background: #EAE9E7;
+	color: #333;
+}
+
+main .company-info .whatWeBelieve a {
+	background: #333;
+	color: #EAE9E7;
+}
+
+main .company-info article h2 {
+	font-weight: 300;
+	font-size: 20px;
+	letter-spacing: 0.2em;
+	margin-bottom: 20px;
+}
+
+main .company-info article a {
+	font-size: 14px;
+	letter-spacing: 0.15em;
+	width: 300px;
+	height: 60px;
+	display: block;
+	line-height: 60px;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+
+main .company-info article a:hover {
+	text-decoration: underline;
+}
+
+main .company-info article .txt-box {
+	font-family: 'BC steiner', serif;
+	font-weight: 400;
+	font-size: 70px;
+	text-align: right;
+	margin-bottom: 100px;
+}
+
+main .company-info article .txt-box > span {
+	display: block;
+}
+
+main .company-info .whatWeBelieve h3 {
+	font-size: 70px;
+	font-weight: 400;
+	text-shadow: -2px -2px #EAE9E7, -2px 2px #EAE9E7, 2px -2px #EAE9E7, 2px 2px #EAE9E7;
+	border-bottom: 1px solid #333;
+	line-height: 85%;
+	display: inline-block;
+	cursor: pointer;
+}
+
+main .company-info .whatWeBelieve h3:hover {
+	color: #fff;
+}
+
+main .company-info .whatWeBelieve .open-box {
+	display: none;
+}
+
+main .essential {
+	margin-bottom: 50px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+}
+
+main .essential img {
+	width: 50%;
+	height: 50%;
+}
+
+main .essential .txt-box {
+	width: 40%;
+}
+
+main .body {
+	flex-direction: row-reverse;
+}
+
+main .essential h2 {
+	font-family: 'BC steiner',serif;
+	font-weight: 500;
+	font-size: 50px;
+	margin-bottom: 20px;
+}
+
+main .essential p {
+	font-size: 14px;
+	letter-spacing: 0.05em;
+	margin-bottom: 40px;
+}
+
+main .essential a {
+	font-size: 14px;
+	background: #333;
+	color: #fff;
+	font-weight: 300;
+	width: 300px;
+	height: 60px;
+	text-align: center;
+	line-height: 60px;
+	letter-spacing: 0.15em;
+	display: block;
+}
+
+main .essential a:hover {
+	text-decoration: underline;
+}
+
+main .contactUs {
+	position: relative;
+	margin-bottom: 50px;
+	color: #fff;
+	font-family: 'BC steiner',serif;
+}
+
+main .contactUs img {
+	width: 100%;
+}
+
+main .contactUs .txt-box {
+	position: absolute;
+	top: 30px; left: 30px;
+}
+
+main .contactUs .txt-box span {
+	font-size: 70px;
+	display: block;
+}
+
+main .contactUs .link-box {
+	position: absolute;
+	bottom: 30px; left: 30px;
+	color: #fff;
+}
+
+main .contactUs .link-box p {
+	font-size: 70px;
+}
+
+main .contactUs .link-box li {
+	display: inline-block;
+	border-bottom: 1px solid transparent;
+	margin-right: 40px;
+}
+
+main .contactUs .link-box p {
+	margin-bottom: 20px;
+	font-size: 50px;
+}
+
+main .contactUs .link-box a {
+	font-family: 'helvetica neue', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	color: #fff;
+	letter-spacing: .1em;
+	padding-bottom: 5px;
+	display: inline-block;
+}
+
+main .contactUs .link-box li:hover {
+	border-bottom: 1px solid #fff;
+}
+
+main .comment {
+	background: #EAE9E7;
+	padding: 40px;
+	margin-bottom: 50px;
+}
+
+main .comment ul {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+main .comment li {
+	flex: 1;
+	padding: 40px;
+}
+
+main .comment img {
+	width: 100px;
+	height: auto;
+	margin: 0 auto 30px auto;
+	display: block;
+}
+
+main .comment p {
+	font-size: 14px;
+	font-weight: 200;
+	letter-spacing: .05em;
+	text-align: center;
+	line-height: 1.5;
+}
+
+footer {
+	background: #111;
+	color: #fff;
+}
+
+footer .page {
+	padding: 50px;
+	box-sizing: border-box;
+}
+
+footer nav {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 50px;
+}
+
+footer nav div {
+	flex: 1;
+}
+
+footer h3 {
+	font-family: 'BC steiner',serif;
+	font-size: 30px;
+	font-weight: 400;
+	margin-bottom: 20px;
+}
+
+footer li {
+	margin-bottom: 5px;
+}
+
+footer nav a:hover {
+	text-decoration: underline;
+}
+
+footer nav a {
+	font-size: 14px;
+	font-weight: 200;
+	letter-spacing: .05em;
+	color: #fff;
+	display: inline-block;
+}
+
+footer form {
+	margin-bottom: 20px;
+}
+
+footer form input {
+	border: none;
+	outline: none;
+	padding: 10px;
+	font-size: 12px;
+	background: #fff;
+}
+
+footer form input[type="email"] {
+	width: 60%;
+}
+
+footer form input[type="email"]::placeholder {
+	opacity: .5;
+}
+
+footer .icon {
+	display: flex;
+}
+
+footer .icon li {
+	margin-right: 20px;
+}
+
+footer span, footer span a {
+	font-size: 12px;
+	font-weight: 100;
+	color: #fff;
+	letter-spacing: .05em;
+}
+
+footer span a {
+	text-decoration: underline;
+}
